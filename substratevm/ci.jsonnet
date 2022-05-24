@@ -88,7 +88,7 @@
         ["mx", "helloworld"],
       ]
     } + maven + svm_unittest + t("35:00"),
-    windows_jdk17     + gate("basics", "build,helloworld,test,svmjunit") + svm_unittest + t("1:30:00"),
+    windows_jdk17     + gate("basics", "build,helloworld,test,test_build_time_eval,svmjunit") + svm_unittest + t("1:30:00"),
     windows_jdk17     + gate("basics-quickbuild", "build,helloworld_quickbuild,test_quickbuild,svmjunit_quickbuild") + svm_unittest + t("1:30:00"),
   ],
 }
